@@ -39,7 +39,6 @@ class TodoListState extends State<TodoList> {
         itemCount: items.length,
         itemBuilder: (BuildContext ctxt, int index) {
           return _buildRow(index);
-
         });
   }
 
@@ -60,16 +59,11 @@ class TodoListState extends State<TodoList> {
         ),
       ),
       Divider()
-
     ]);
   }
 
-
-  
   void _removeItem(int index) {
-
     setState(() {
-
       items.removeAt(index);
     });
     _showSnackBar();
